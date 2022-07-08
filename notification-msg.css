@@ -1,0 +1,27 @@
+#wpcp-error-message {
+    position: fixed;
+    top: 5rem;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 280px;
+    padding: 0.4rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.8em;
+    right: calc(50% - 140px);
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.hideme{
+    display: none !important;
+}
+
+.showme{
+    display: flex !important;
+}
