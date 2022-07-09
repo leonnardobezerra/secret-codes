@@ -1,4 +1,3 @@
-<script>
         $( document ).ready(function() {
             $( ".btn-close" ).click(function() {
                 $(".modal").removeClass("show");
@@ -41,4 +40,3 @@ const mouseEvent = e => {
         $(".modal").addClass("show"); 
     }
 };
-</script>
