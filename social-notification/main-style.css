@@ -1,0 +1,365 @@
+@keyframes example {
+  from {visibility: hidden;}
+  to {visibility: visible;}
+}
+
+.boost-notification{
+    position:fixed;
+    width: fit-content;
+    height:77px;
+    margin:5px;
+    padding:3px;
+    border-radius: 8px;
+    padding-right: 40px;
+    border:2px solid #0c0088;
+    display:none;
+    box-sizing:border-box;
+    background:#fff;
+    z-index:999999;
+    box-shadow: 2px 3px 4px 0px #bfbfbf;
+    font-family: inherit, sans-serif;
+    visibility: hidden;
+    transition: visibility 0s ease-in-out 0.33s;
+}
+
+.show{
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.boost-notification .boost-notification-map{
+    border-radius:50%;
+    overflow:hidden
+}
+.boost-notification-map{
+    width:67px;
+    height:67px;
+    border-radius:100px;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    float:left;
+    position:relative;
+    box-sizing:border-box
+}
+.boost-notification-map a{
+    display:block;
+    width:69px;
+    height:69px
+}
+.boost-notification-map img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+}
+.boost-notification-map img.google-map{
+    max-width:none;
+    transform:translate(-36%,-34%) scale(.6)
+}
+.boost-notification-map .fake-map-text-box{
+    position:absolute;
+    width:100%;
+    bottom:38px
+}
+.boost-notification-map .fake-map-text-box .fake-map-text{
+    width:80%;
+    margin:auto;
+    display:block;
+    line-height:1.4em;
+    max-height:2.8em;
+    overflow:hidden;
+    font-size:9px;
+    font-weight:700;
+    text-align:center;
+    word-wrap:break-word
+}
+.boost-notification-message{
+    margin-left:67px;
+    width:auto;
+    height:67px;
+    padding:10px 10px 7px 15px;
+    box-sizing:border-box;
+    text-align: left;
+}
+.boost-notification-message-top,.boost-notification-message-bottom,.boost-notification-message-info{
+    line-height:16px;
+    width:100%
+}
+.boost-notification-message-info .boost-notification-credit{
+    line-height:13px
+}
+.boost-notification-message-info .boost-notification-credit>div{
+    display:inline-block
+}
+.boost-notification-message-top,.boost-notification-message-bottom{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+.boost-notification-credit .boost-notification-credit-text-bottom a,.boost-notification-credit .boost-notification-credit-text-bottom a:hover,.boost-notification-credit .boost-notification-credit-text-bottom a:active,.boost-notification-credit .boost-notification-credit-text-bottom a:focus{
+    text-decoration:none;
+    outline:none
+}
+.boost-notification-message-top{
+    font-size: 1.1rem;
+    letter-spacing:-.16px
+}
+.boost-notification-message-bottom,.boost-notification-message-bottom>a{
+    font-size:12px;
+    letter-spacing:-.14px
+}
+.boost-notification-message-info{
+    font-size:10px;
+    letter-spacing:-.11px;
+    color:rgba(6,0,71,.52)
+}
+.desktop_bottom_left{
+    bottom:0;
+    left:0
+}
+.desktop_bottom_right{
+    bottom:0;
+    right:0
+}
+.desktop_bottom_middle{
+    bottom:0;
+    left:0;
+    right:0;
+    margin:5px auto
+}
+.desktop_top_left{
+    top:0;
+    left:0
+}
+.desktop_top_right{
+    top:0;
+    right:0
+}
+.desktop_top_middle{
+    top:0;
+    left:0;
+    right:0;
+    margin:5px auto
+}
+.boost-notification-mobile{
+    left:0;
+    right:0;
+    margin:5px auto
+}
+.mobile_top{
+    top:0
+}
+.mobile_bottom{
+    bottom:0
+}
+.desktop_bottom{
+    bottom:0
+}
+.desktop_hide,.mobile_hide{
+    display:none
+}
+.boost-notification.preview{
+    position:static;
+    float:none;
+    display:block
+}
+.boost-notification-message-info{
+    position:relative
+}
+.boost-notification-message-info .boost-notification-time,.boost-notification-message-info .boost-notification-credit{
+    display:inline-block
+}
+.boost-notification-message-info .boost-notification-credit{
+    position:absolute;
+    right:-10px;
+    top:10px;
+    white-space:nowrap;
+    font-size:11px
+}
+.boost-notification-square .boost-notification-message-info .boost-notification-credit,.boost-notification-mobile .boost-notification-message-info .boost-notification-credit{
+    right:-12px
+}
+.boost-notification-mobile .boost-notification-message-info .boost-notification-credit>div{
+    display:inline-block
+}
+.boost-notification-message-info .boost-notification-credit span{
+    display:inline-block;
+    vertical-align:middle
+}
+.boost-notification-message-info .boost-notification-credit .boost-notification-credit-img{
+    margin:0 5px;
+    width:19px;
+    height:19px;
+    border:2px solid transparent;
+    border-radius:100px;
+    text-align:center
+}
+.boost-notification-message-info .boost-notification-credit .boost-notification-credit-text-bottom{
+    text-align:left;
+    font-weight:700;
+}
+.boost-notification-square .boost-notification-message-info .boost-notification-credit .boost-notification-credit-text-bottom{
+    text-align:right
+}
+
+.boost-notification-round .boost-notification-map{
+    border-radius:100px
+}
+.boost-notification-square,.boost-notification-square .boost-notification-map,.boost-notification-mobile,.boost-notification-mobile .boost-notification-map{
+    border-radius:0
+}
+.boost-notification-mobile .boost-notification-map .fake-map-text-box{
+    bottom:26px
+}
+.boost-notification-mobile .boost-notification-map .fake-map-text-box .fake-map-text{
+    width:100%;
+    font-size:8px
+}
+.boost-notification .boost-close-button{
+    position:absolute;
+    box-sizing:border-box;
+    z-index:3;
+    top:-4px;
+    right:-4px;
+    cursor:pointer;
+    line-height:14px;
+    font-size:9px;
+    font-weight:700;
+    text-align:center;
+    background:#fff;
+    border:2px solid;
+    border-radius:50px;
+    width:17px;
+    height:17px;
+    display:none
+}
+.boost-notification-mobile{
+    width:98%;
+    margin:3px 1%;
+    height:58px
+}
+
+.boost-notification-mobile .boost-notification-message{
+    height:48px
+}
+.boost-notification-mobile .boost-notification-message-info .boost-notification-credit span{
+    display:inline-block;
+    vertical-align:baseline
+}
+.boost-notification-mobile .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img{
+    margin:0 5px;
+    width:19px;
+    height:19px;
+    top:7px;
+    position:relative
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop{
+    width:240px;
+    height:54px;
+    margin:2px;
+    padding:1px;
+    border-width:1px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-map{
+    width:50px;
+    height:50px;
+    box-sizing:border-box
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message{
+    margin-left:50px;
+    width:auto;
+    height:50px;
+    padding:7px 7px 5px 10px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-top,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-top>a,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-bottom,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-bottom>a,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info .boost-notification-credit{
+    line-height:12px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-top{
+    font-size:10px;
+    letter-spacing:-.16px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-bottom,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-bottom>a{
+    font-size:8px;
+    letter-spacing:-.14px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info,.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info .boost-notification-credit{
+    font-size:7px;
+    letter-spacing:-.11px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info .boost-notification-credit{
+    right:-6px;
+    top:0;
+    line-height:7px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop.boost-notification-square .boost-notification-message-info .boost-notification-credit{
+    right:-8px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img{
+    margin:0 2px;
+    width:10px;
+    height:10px
+}
+.boost-notification-style-template .boost-notification.boost-notification-desktop .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img img{
+    width:100%
+}
+.boost-notification-style-template .boost-notification-mobile{
+    width:240px;
+    margin:2px;
+    height:41px;
+    padding:1px;
+    border-width:1px
+}
+.boost-notification-style-template .boost-notification-mobile .boost-notification-map{
+    width:37px;
+    height:37px
+}
+.boost-notification-style-template .boost-notification-mobile .boost-notification-message{
+    height:37px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-top,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-top>a,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-bottom,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-bottom>a,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit{
+    line-height:11px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-top{
+    font-size:9px;
+    letter-spacing:-.16px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-bottom,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-bottom>a{
+    font-size:7px;
+    letter-spacing:-.14px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info,.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit{
+    font-size:6px;
+    letter-spacing:-.11px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit{
+    right:-13px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img{
+    margin:0 2px;
+    width:10px;
+    height:10px;
+    top:4px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit{
+    top:-2px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit span{
+    vertical-align:baseline
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img{
+    margin:0 2px;
+    width:10px;
+    height:10px
+}
+.boost-notification-style-template .boost-notification.boost-notification-mobile .boost-notification-message-info .boost-notification-credit .boost-notification-credit-img img{
+    width:100%
+}
+@media(max-width:330px){
+    .boost-notification{
+        width:98%;
+        margin:3px 1%
+    }
+}
